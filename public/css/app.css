@@ -10,6 +10,9 @@ p {
     font-size: xx-large;
 }
 
+.card{
+    height: fit-content;
+}
 .card-body p {
     font-size: xx-small;
     padding-left: inherit;
