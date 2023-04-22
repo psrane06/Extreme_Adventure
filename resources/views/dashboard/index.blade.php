@@ -29,13 +29,13 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <i class="bi bi-joystick fs-4"></i><span class="fs-2 p-2">{{ number_format($data['bookings']) }}</span>
+                    <i class="bi bi-joystick fs-4"></i><span class="fs-2 p-2">{{ number_format($data['conversion_bookings']) }}</span>
                     <p class="fw-bolder ms-4 text-opacity-50 text-secondary text-uppercase">bookings this
                         month</p>
                 </div>
                 <div class="col">
                     <i class="bi bi-eye icon-circle border border-dark fs-5"></i>
-                    <span class="fs-2 p-2">{{ number_format($data['views']) }}</span>
+                    <span class="fs-2 p-2">{{ number_format($data['conversion_views']) }}</span>
                     <p class="fw-bolder ms-4 text-opacity-50 text-secondary text-uppercase">views this month
                     </p>
                 </div>
