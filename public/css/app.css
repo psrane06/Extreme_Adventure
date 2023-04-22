@@ -1,5 +1,7 @@
 body {
     font-family: 'Nunito', sans-serif;
+    width: 90vw;
+    margin: 0 auto;
 }
 
 p {
@@ -46,7 +48,7 @@ p {
     justify-content: center;
 }
 
-.top-performers{
+.top-performers {
     display: grid;
     align-content: space-evenly;
 }
@@ -55,7 +57,7 @@ p {
     font-size: small;
     font-weight: bolder;
 }
+
 .top-performers.earning {
     font-size: xx-small;
-    /* font-weight: bolder; */
 }
