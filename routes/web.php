@@ -1,5 +1,8 @@
 <?php
 
+use App\Models\Activity;
+use App\Models\Data_element;
+use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,16 +16,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/{id}', function ($id) {
 
-    $data = [
-        'id' => '1',
-        'earning' => '6,800',
-        'switch_earning' => '4,100',
-        'bookings' => '670',
-        'views' => '2,390',
-        'switch_credits' => '75,650'
-    ];
+    $data = Data_element::find($id);
+    // $top_performer = Activity::getCountByActivity();
     return view(
         'dashboard.index',
         [

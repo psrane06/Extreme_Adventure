@@ -17,25 +17,25 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <i class="bi bi-cash-coin fs-4"></i><span class="fs-2 p-2">{{ $data['earning'] }}</span>AED
+                    <i class="bi bi-cash-coin fs-4"></i><span class="fs-2 p-2">{{ number_format($data['earning']) }}</span>AED
                     <p class="fw-bolder ms-4 text-opacity-50 text-secondary text-uppercase">Total this month
                     </p>
                 </div>
                 <div class="col">
-                    <i class="bi bi-cash-stack fs-4"></i><span class="fs-2 p-2">{{ $data['switch_earning'] }}</span>AED
+                    <i class="bi bi-cash-stack fs-4"></i><span class="fs-2 p-2">{{ number_format($data['switch_earning']) }}</span>AED
                     <p class="fw-bolder ms-4 text-opacity-50 text-secondary text-uppercase">From switch+
                         members</p>
                 </div>
             </div>
             <div class="row">
                 <div class="col">
-                    <i class="bi bi-joystick fs-4"></i><span class="fs-2 p-2">{{ $data['bookings'] }}</span>
+                    <i class="bi bi-joystick fs-4"></i><span class="fs-2 p-2">{{ number_format($data['bookings']) }}</span>
                     <p class="fw-bolder ms-4 text-opacity-50 text-secondary text-uppercase">bookings this
                         month</p>
                 </div>
                 <div class="col">
                     <i class="bi bi-eye icon-circle border border-dark fs-5"></i>
-                    <span class="fs-2 p-2">{{ $data['views'] }}</span>
+                    <span class="fs-2 p-2">{{ number_format($data['views']) }}</span>
                     <p class="fw-bolder ms-4 text-opacity-50 text-secondary text-uppercase">views this month
                     </p>
                 </div>
@@ -52,7 +52,7 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <i class="bi bi-cash-coin fs-4"></i><span class="fs-2 p-2">{{ $data['switch_credits'] }}</span>AED
+                    <i class="bi bi-cash-coin fs-4"></i><span class="fs-2 p-2">{{ number_format($data['switch_credits']) }}</span>AED
                 </div>
                 <span class="col-7 fw-bolder">of switch credit is available this month for
                     activities like yours.</span>
