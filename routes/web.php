@@ -15,8 +15,14 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
 
-    $data = ['earning' => '6,800', 'switch_earning' => '4,100', 'bookings' => '670',
-                'views' => '2,390', 'switch_credits' => '75,650'];
+    $data = [
+        'id' => '1',
+        'earning' => '6,800',
+        'switch_earning' => '4,100',
+        'bookings' => '670',
+        'views' => '2,390',
+        'switch_credits' => '75,650'
+    ];
     return view(
         'dashboard.index',
         [

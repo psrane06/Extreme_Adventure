@@ -30,15 +30,18 @@
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
     </script>
 
-    <main class="main-container p-4 mx-5">
-        <div class="m-0 my-5">
+    <main class="main-container p-4">
+        <div class="m-0 my-5 d-block">
             <h2>Karma Yoga, you have <span class="text-primary fw-bold"> {{ '3 activities' }} </span> live on Switch.
             </h2>
             <h2>You've had <span class="text-primary fw-bold">{{ '6,524 people' }}</span> look at your activities this
                 month.</h2>
             <h2>You managed to turn that into <span class="text-primary fw-bold">{{ '52 bookings' }}</span>.</h2>
         </div>
-        {{ $slot }}
+        <div class="our_solution_category">
+            <div class="solution_cards_box">
+                {{ $slot }}
+            </div>
         </div>
     </main>
 </body>

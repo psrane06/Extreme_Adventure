@@ -1,18 +1,16 @@
 body {
     font-family: 'Nunito', sans-serif;
-    max-width: 1200px;
-    margin: 70px auto;
-    justify-content: space-between;
-    align-items: center;
 }
 
 p {
     font-size: xx-large;
 }
 
-.card{
+.card {
     height: fit-content;
+    position: relative;
 }
+
 .card-body p {
     font-size: xx-small;
     padding-left: inherit;
@@ -32,6 +30,32 @@ p {
     padding: 0.1em;
 }
 
-.card-title{
+.card-title {
     font-weight: bold;
+}
+
+.our_solution_category {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.our_solution_category .solution_cards_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.top-performers{
+    display: grid;
+    align-content: space-evenly;
+}
+
+.top-performers span {
+    font-size: small;
+    font-weight: bolder;
+}
+.top-performers.earning {
+    font-size: xx-small;
+    /* font-weight: bolder; */
 }
