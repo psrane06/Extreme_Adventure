@@ -53,15 +53,25 @@ p {
     align-content: space-evenly;
 }
 
-.top-performers span {
+.top-performers .sport-name {
     font-size: small;
     font-weight: bolder;
 }
 
-.top-performers.earning {
+.top-performers .earning {
     font-size: xx-small;
+}
+
+.top-performers .location {
+    font-size: smaller;
 }
 
 .dropdown:parent {
     margin: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    h2 {
+        font-size: large;
+    }
 }

@@ -63,22 +63,22 @@
                             </div>
                         </div>
                         <div class="row pt-3">
-                            <div class="col d-flex p-0">
+                            <div class="col-2 p-0">
                                 <img class="rounded w-100 align-self-center"
                                     src="{{ asset('images/dashboard/dune_buggy.png') }}" alt="">
                             </div>
-                            <div class="col-4 top-performers">
+                            <div class="col-auto top-performers">
                                 <span class="sport-name">{{ 'Dune Buggy Extreme' }}</span> {{-- sportname --}}
                                 <span class="location">{{ 'Dubai Marina' }}</span> {{-- location --}}
                                 <span class="earning">{{ '790' }} AED</span> {{-- earning --}}
                             </div>
-                            <div class="col py-2">
+                            <div class="col-auto py-2">
                                 <i class="bi bi-calendar2-check align-middle fs-6"></i>
                                 <span class="fs-4 p-2">{{ '52' }} </span> {{-- Number of tickets --}}
                                 <p class="fw-bolder ms-3 text-opacity-50 text-secondary text-uppercase">BOOKINGS
                                 </p>
                             </div>
-                            <div class="col">
+                            <div class="col-auto py-2">
                                 <i class="bi bi-cash-coin align-middle fs-6"></i>
                                 <span class="fs-4 p-2">{{ '110' }}</span>AED {{-- Value of tickets --}}
                                 <p class="fw-bolder ms-3 text-opacity-50 text-secondary">Avg. value of each
@@ -129,17 +129,17 @@
                             </div>
                         </div>
                         <div class="row pt-3">
-                            <div class="col d-flex p-0">
+                            <div class="col-lg-8 col-8 d-flex p-0">
                                 <img class="rounded w-100 align-self-center"
-                                    src="{{ asset('images/dashboard/chart-placeholder.png') }}" alt="">
+                                    src="{{ asset('images/dashboard/chart-placeholder.png') }}" alt="chart">
                             </div>
-                            <div class="col">
-                                <i class="bi bi-eye icon-circle fs-5"></i>
-                                <span class="fs-4 p-2">{{ '90' }}</span> {{-- Views --}}
+                            <div class="col align-self-center px-4">
+                                <i class="bi bi-eye icon-circle border border-dark fs-4"></i>
+                                <span class="fs-3 p-2">{{ '90' }}</span> {{-- Views --}}
                                 <p class="fw-bolder ms-4 text-opacity-50 text-secondary text-uppercase">Views
                                 </p>
-                                <i class="bi bi-calendar2-check fs-5"></i>
-                                <span class="fs-4 p-2">{{ '18' }}</span> {{-- Bookings --}}
+                                <i class="bi bi-calendar2-check fs-3"></i>
+                                <span class="fs-3 p-2">{{ '18' }}</span> {{-- Bookings --}}
                                 <p class="fw-bolder ms-4 text-opacity-50 text-secondary text-uppercase">
                                     Bookings</p>
                             </div>

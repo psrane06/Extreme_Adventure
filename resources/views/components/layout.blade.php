@@ -33,10 +33,11 @@
     <main class="main-container p-4">
         <div class="m-0 my-5 d-block">
             <h2>Karma Yoga, you have <span class="text-primary fw-bold"> {{ '3 activities' }} </span> live on Switch.
+                <br>
+                You've had <span class="text-primary fw-bold">{{ '6,524 people' }}</span> look at your activities this
+                month. <br>
+                You managed to turn that into <span class="text-primary fw-bold">{{ '52 bookings' }}</span>.
             </h2>
-            <h2>You've had <span class="text-primary fw-bold">{{ '6,524 people' }}</span> look at your activities this
-                month.</h2>
-            <h2>You managed to turn that into <span class="text-primary fw-bold">{{ '52 bookings' }}</span>.</h2>
         </div>
         {{ $slot }}
     </main>

@@ -1,8 +1,6 @@
 <?php
 
-use App\Models\Activity;
-use App\Models\Data_element;
-use Illuminate\Support\Facades\Request;
+use App\Http\Controllers\Data_elementController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,14 +14,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/{id}', function ($id) {
-
-    $data = Data_element::find($id);
-    // $top_performer = Activity::getCountByActivity();
-    return view(
-        'dashboard.index',
-        [
-            'data' => $data
-        ]
-    );
-});
+Route::get('/{id}',[Data_elementController::class, 'index']);
