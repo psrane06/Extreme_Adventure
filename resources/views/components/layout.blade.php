@@ -38,11 +38,7 @@
                 month.</h2>
             <h2>You managed to turn that into <span class="text-primary fw-bold">{{ '52 bookings' }}</span>.</h2>
         </div>
-        <div class="our_solution_category">
-            <div class="solution_cards_box">
-                {{ $slot }}
-            </div>
-        </div>
+        {{ $slot }}
     </main>
 </body>
 

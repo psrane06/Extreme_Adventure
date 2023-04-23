@@ -1,11 +1,11 @@
 <x-layout>
     <div class="row">
         <div class="col-lg-6 col-12">
-            <div class="row">
+            <div class="row gy-3">
                 <div class="col-12">
                     <x-card>
                         <div class="row">
-                            <div class="col-10">
+                            <div class="col-10 my-auto">
                                 <x-dropdown title="Revenue for December">
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="#">November</a></li>
@@ -15,10 +15,10 @@
                                 </x-dropdown>
                             </div>
                             <div class="col text-end d-inline">
-                                <i class="bi bi-arrow-right-short align-middle fs-6"></i>
+                                <i class="bi bi-arrow-right-short  fs-3"></i>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row pt-3">
                             <div class="col">
                                 <i class="bi bi-cash-coin fs-4"></i><span
                                     class="fs-2 p-2">{{ number_format($data['earning']) }}</span>AED
@@ -59,10 +59,10 @@
                                 {{ 'Top performers' }}
                             </div>
                             <div class="col text-end d-inline">
-                                <i class="bi bi-arrow-right-short align-middle fs-6"></i>
+                                <i class="bi bi-arrow-right-short  fs-3"></i>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row pt-3">
                             <div class="col d-flex p-0">
                                 <img class="rounded w-100 align-self-center"
                                     src="{{ asset('images/dashboard/dune_buggy.png') }}" alt="">
@@ -91,33 +91,31 @@
         </div>
         {{-- right side col --}}
         <div class="col-lg-6 col-12">
-            <div class="row">
+            <div class="row gy-3">
                 <div class="col-12">
                     <x-card>
                         <div class="row">
                             <div class="col-10 card-title">
-                                {{ 'Switch credits' }}
+                                {{ 'Switch credit' }}
                             </div>
                             <div class="col text-end d-inline">
-                                <i class="bi bi-arrow-right-short align-middle fs-6"></i>
+                                <i class="bi bi-arrow-right-short fs-3"></i>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row py-4">
                             <div class="col">
                                 <i class="bi bi-cash-coin fs-4"></i><span
                                     class="fs-2 p-2">{{ number_format($data['switch_credits']) }}</span>AED
                             </div>
-                            <span class="col-7 fw-bolder">of switch credit is available this month for
-                                activities like yours.</span>
+                            <span class="col-7 fw-bolder">of Switch Credit is available <br>
+                                this month for activities like yours.</span>
                         </div>
                     </x-card>
                 </div>
-            </div>
-            <div class="row">
                 <div class="col-12">
                     <x-card>
                         <div class="row">
-                            <div class="col-10">
+                            <div class="col-10 my-auto">
                                 <x-dropdown title="Conversion for December">
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="#">November</a></li>
@@ -127,14 +125,13 @@
                                 </x-dropdown>
                             </div>
                             <div class="col text-end d-inline">
-                                <i class="bi bi-arrow-right-short align-middle fs-6"></i>
+                                <i class="bi bi-arrow-right-short  fs-3"></i>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row pt-3">
                             <div class="col d-flex p-0">
                                 <img class="rounded w-100 align-self-center"
-                                    src="{{ asset('images/dashboard/chart-placeholder.png') }}"
-                                    alt="">
+                                    src="{{ asset('images/dashboard/chart-placeholder.png') }}" alt="">
                             </div>
                             <div class="col">
                                 <i class="bi bi-eye icon-circle fs-5"></i>
@@ -151,5 +148,4 @@
                 </div>
             </div>
         </div>
-    </div>
 </x-layout>

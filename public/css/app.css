@@ -10,7 +10,6 @@ p {
 
 .card {
     height: fit-content;
-    position: relative;
 }
 
 .card-body p {
@@ -34,6 +33,7 @@ p {
 
 .card-title {
     font-weight: bold;
+    margin: auto;
 }
 
 .our_solution_category {
@@ -60,4 +60,8 @@ p {
 
 .top-performers.earning {
     font-size: xx-small;
+}
+
+.dropdown:parent {
+    margin: auto;
 }
