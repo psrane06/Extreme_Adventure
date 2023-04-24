@@ -18,36 +18,40 @@
                                 <i class="bi bi-arrow-right-short  fs-3"></i>
                             </div>
                         </div>
-                        <div class="row pt-3">
-                            <div class="col">
-                                <i class="bi bi-cash-coin fs-4"></i><span
-                                    class="fs-2 p-2">{{ number_format($data['earning']) }}</span>AED
-                                <p class="fw-bolder ms-4 text-opacity-50 text-secondary text-uppercase">Total
-                                    this month
-                                </p>
-                            </div>
-                            <div class="col">
-                                <i class="bi bi-cash-stack fs-4"></i><span
-                                    class="fs-2 p-2">{{ number_format($data['switch_earning']) }}</span>AED
-                                <p class="fw-bolder ms-4 text-opacity-50 text-secondary text-uppercase">From
-                                    switch+
-                                    members</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <i class="bi bi-joystick fs-4"></i><span
-                                    class="fs-2 p-2">{{ number_format($data['conversion_bookings']) }}</span>
-                                <p class="fw-bolder ms-4 text-opacity-50 text-secondary text-uppercase">bookings
-                                    this
-                                    month</p>
-                            </div>
-                            <div class="col">
-                                <i class="bi bi-eye icon-circle border border-dark fs-5"></i>
-                                <span class="fs-2 p-2">{{ number_format($data['conversion_views']) }}</span>
-                                <p class="fw-bolder ms-4 text-opacity-50 text-secondary text-uppercase">views
-                                    this month
-                                </p>
+                        <div class="row revenue-card">
+                            <div class="col-7 col-sm-12">
+                                <div class="row pt-3">
+                                    <div class="col">
+                                        <i class="bi bi-cash-coin fs-4"></i><span
+                                            class="fs-2 p-2">{{ number_format($data['earning']) }}</span>AED
+                                        <p class="fw-bolder ms-4 text-opacity-50 text-secondary text-uppercase">Total
+                                            this month
+                                        </p>
+                                    </div>
+                                    <div class="col">
+                                        <i class="bi bi-cash-stack fs-4"></i><span
+                                            class="fs-2 p-2">{{ number_format($data['switch_earning']) }}</span>AED
+                                        <p class="fw-bolder ms-4 text-opacity-50 text-secondary text-uppercase">From
+                                            switch+
+                                            members</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <i class="bi bi-joystick fs-4"></i><span
+                                            class="fs-2 p-2">{{ number_format($data['conversion_bookings']) }}</span>
+                                        <p class="fw-bolder ms-4 text-opacity-50 text-secondary text-uppercase">bookings
+                                            this
+                                            month</p>
+                                    </div>
+                                    <div class="col">
+                                        <i class="bi bi-eye icon-circle border border-dark fs-5"></i>
+                                        <span class="fs-2 p-2">{{ number_format($data['conversion_views']) }}</span>
+                                        <p class="fw-bolder ms-4 text-opacity-50 text-secondary text-uppercase">views
+                                            this month
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </x-card>

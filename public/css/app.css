@@ -74,4 +74,19 @@ p {
     h2 {
         font-size: large;
     }
+
+    .revenue-card {
+        display: flex;
+        justify-content: center;
+    }
+
+    .top-performers {
+        display: grid;
+        align-content: space-evenly;
+    }
+
+    .card-body span {
+        font-size: xx-small;
+        padding-left: inherit;
+    }
 }
