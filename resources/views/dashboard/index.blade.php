@@ -63,30 +63,41 @@
                             </div>
                         </div>
                         <div class="row pt-3">
-                            <div class="col-2 p-0">
-                                <img class="rounded w-100 align-self-center"
-                                    src="{{ asset('images/dashboard/dune_buggy.png') }}" alt="">
-                            </div>
-                            <div class="col-auto top-performers">
-                                <span class="sport-name">{{ 'Dune Buggy Extreme' }}</span> {{-- sportname --}}
-                                <span class="location">{{ 'Dubai Marina' }}</span> {{-- location --}}
-                                <span class="earning">{{ '790' }} AED</span> {{-- earning --}}
-                            </div>
-                            <div class="col-auto py-2">
-                                <i class="bi bi-calendar2-check align-middle fs-6"></i>
-                                <span class="fs-4 p-2">{{ '52' }} </span> {{-- Number of tickets --}}
-                                <p class="fw-bolder ms-3 text-opacity-50 text-secondary text-uppercase">BOOKINGS
-                                </p>
-                            </div>
-                            <div class="col-auto py-2">
-                                <i class="bi bi-cash-coin align-middle fs-6"></i>
-                                <span class="fs-4 p-2">{{ '110' }}</span>AED {{-- Value of tickets --}}
-                                <p class="fw-bolder ms-3 text-opacity-50 text-secondary">Avg. value of each
-                                    booking</p>
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-2 p-0 align-self-center">
+                                        <img class="rounded w-100 align-self-center"
+                                            src="{{ asset('images/dashboard/dune_buggy.png') }}" alt="">
+                                    </div>
+                                    <div class="col-auto top-performers">
+                                        <span class="sport-name">{{ 'Dune Buggy Extreme' }}</span> {{-- sportname --}}
+                                        <span class="location">{{ 'Dubai Marina' }}</span> {{-- location --}}
+                                        <span class="earning">{{ '790' }} AED</span> {{-- earning --}}
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <div class="row">
+                                            <div class="col-auto py-2">
+                                                <i class="bi bi-calendar2-check align-middle fs-6"></i>
+                                                <span class="fs-4 p-2">{{ '52' }} </span> {{-- Number of tickets --}}
+                                                <p class="fw-bolder ms-3 text-opacity-50 text-secondary text-uppercase">
+                                                    BOOKINGS
+                                                </p>
+                                            </div>
+                                            <div class="col-auto py-2">
+                                                <i class="bi bi-cash-coin align-middle fs-6"></i>
+                                                <span class="fs-4 p-2">{{ '110' }}</span>AED
+                                                {{-- Value of tickets --}}
+                                                <p class="fw-bolder ms-3 text-opacity-50 text-secondary">Avg. value of
+                                                    each
+                                                    booking</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </x-card>
                 </div>
+                </x-card>
             </div>
         </div>
         {{-- right side col --}}
