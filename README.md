@@ -13,6 +13,7 @@
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
 - Html, CSS
+- Laravel Livewire
 - Bootstrap
 - Laravel (Migration, Seeder, Model, View, Controller)
 
